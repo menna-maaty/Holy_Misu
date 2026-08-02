@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOLY MISU — Artisan Cheesecakes</title>
+  <meta name="description" content="Handcrafted cheesecakes — berries, caramel, snickers, strawberry, and birthday bundles. Baked fresh, est. 2025." />
+  <link rel="icon" href="logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand">
+        <img src="logo.jpg" alt="Holy Misu" class="brand__logo" />
+        <div class="brand__text">
+          <div class="brand__name">HOLY MISU</div>
+          <div class="brand__tag">Est. 2025</div>
+        </div>
+      </a>
+      <nav class="nav__links">
+        <a href="#cheesecakes">Cheesecakes</a>
+        <a href="#birthday">Birthday</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#cheesecakes" class="btn btn--primary btn--sm">Shop Now</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="eyebrow">Handcrafted · Baked Fresh</span>
+        <h1 class="display">Cheesecakes <em>made holy.</em></h1>
+        <p class="lead">
+          Slow-baked, ricotta-smooth, and topped with the good stuff. From berry
+          classics to snickers indulgence — your next favorite slice lives here.
+        </p>
+        <div class="hero__cta">
+          <a href="#cheesecakes" class="btn btn--primary">Browse the menu</a>
+          <a href="#birthday" class="btn btn--outline">Birthday bundles</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="head.jpg" alt="Assortment of Holy Misu cheesecakes" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHEESECAKES ============ -->
+  <section id="cheesecakes" class="section">
+    <div class="container">
+      <div class="section__head">
+        <div class="eyebrow eyebrow--accent">Baked Cheesecakes</div>
+        <h2 class="display display--md">Our Signature Cheesecakes</h2>
+        <div class="rule"></div>
+      </div>
+      <div id="product-grid" class="grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ BIRTHDAY ============ -->
+  <section id="birthday" class="birthday">
+    <div class="container birthday__inner">
+      <div class="birthday__image">
+        <img src="birth.jpg" alt="Birthday cheesecake" />
+      </div>
+      <div>
+        <div class="eyebrow eyebrow--accent">Birthday Bundle</div>
+        <h2 class="display display--md">Make it a <em>celebration.</em></h2>
+        <p class="lead">
+          Pick any flavor below — we'll dress it up with birthday styling, candles,
+          and a personal touch. <strong>+EGP 45</strong> on top of the cake price.
+        </p>
+        <div class="bday__flavors" id="bday-flavors"></div>
+        <div id="bday-config"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="contact" class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand">
+          <img src="logo.jpg" alt="Holy Misu" class="brand__logo" />
+          <div class="brand__text">
+            <div class="brand__name">HOLY MISU</div>
+            <div class="brand__tag">Est. 2025</div>
+          </div>
+        </div>
+        <p class="muted small mt">Small-batch cheesecakes baked from scratch. Made with love, served chilled.</p>
+      </div>
+      <div>
+        <div class="foot__title">Explore</div>
+        <ul class="foot__list">
+          <li><a href="#cheesecakes">Cheesecakes</a></li>
+          <li><a href="#birthday">Birthday Bundle</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__title">Follow</div>
+        <ul class="foot__list">
+          <li><a href="https://www.instagram.com/holy.misu.eg?utm_source=qr" target="_blank" rel="noopener">Instagram · @holymisu</a></li>
+        </ul>
+        <p class="muted small mt">DM us to place an order.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">© <span id="year"></span> Holy Misu. All rights reserved.</div>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
